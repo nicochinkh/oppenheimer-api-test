@@ -7,7 +7,7 @@ import utils.DBUtils;
 @CucumberOptions(
         features = {"src/test/resources/features"},
         glue = {"stepdefs"},
-        plugin = {"pretty", "html:target/cucumber-reports.html"},
+        plugin = {"pretty", "html:target/oppenheimer-api-test-reports.html"},
         monochrome = true
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
