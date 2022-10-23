@@ -1,0 +1,84 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 36, Failures: 16, Errors: 0, Skipped: 0, Time elapsed: 2.496 s <<< FAILURE! - in TestSuite
+runScenario(TestRunner)  Time elapsed: 0.055 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid natid] but found [null]
+
+runScenario(TestRunner)  Time elapsed: 0.032 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]
+
+runScenario(TestRunner)  Time elapsed: 0.018 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]
+
+runScenario(TestRunner)  Time elapsed: 0.037 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid name] but found [null]
+
+runScenario(TestRunner)  Time elapsed: 0.026 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Error Message is wrong. expected [Invalid gender,Gender cannot be blank] but found [Gender cannot be blank,Invalid gender]
+
+runScenario(TestRunner)  Time elapsed: 0.023 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 200 expected [200] but found [400]
+
+runScenario(TestRunner)  Time elapsed: 0.017 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Error Message is wrong. expected [Invalid birthdate format] but found [There are some issues with working class hero]
+
+runScenario(TestRunner)  Time elapsed: 0.021 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 200 expected [200] but found [400]
+
+runScenario(TestRunner)  Time elapsed: 0.018 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Error Message is wrong. expected [Invalid death date format] but found [There are some issues with working class hero]
+
+runScenario(TestRunner)  Time elapsed: 0.017 s  <<< FAILURE!
+java.lang.NullPointerException
+
+runScenario(TestRunner)  Time elapsed: 0.023 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid salary precision] but found [null]
+
+runScenario(TestRunner)  Time elapsed: 0.013 s  <<< FAILURE!
+java.lang.NullPointerException
+
+runScenario(TestRunner)  Time elapsed: 0.036 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]
+
+runScenario(TestRunner)  Time elapsed: 0.032 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]
+
+runScenario(TestRunner)  Time elapsed: 0.031 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid taxPaid precision] but found [null]
+
+runScenario(TestRunner)  Time elapsed: 0.022 s  <<< FAILURE!
+java.lang.NullPointerException
+

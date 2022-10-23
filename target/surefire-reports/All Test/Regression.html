@@ -1,0 +1,443 @@
+<html>
+<head>
+<title>TestNG:  Regression</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/16/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Oct 23 12:16:42 SGT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>2 seconds (2261 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "natid's number is greater than 9999999", "Optional[Verify the natid out of valid range will get creation error and won't create a new single workingclass hero]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid natid] but found [null]
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithErrorNatidMessage(Testcases.java:119)
+	at ✽.Check hero creation http response with error natid message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase03.feature:11)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1204088028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1204088028'><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid natid] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithErrorNatidMessage(Testcases.java:119)
+	at ✽.Check hero creation http response with error natid message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase03.feature:11)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the blank name will be rejected by the hero creation api", "Optional[Verify the blank name will be rejected by the hero creation api]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankNameErrorMessage(Testcases.java:170)
+	at ✽.Check hero creation http response with &quot;Invalid name,Name cannot be blank&quot;(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase05.feature:6)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace751608431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace751608431'><pre>java.lang.AssertionError: The following asserts failed:
+	Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankNameErrorMessage(Testcases.java:170)
+	at ✽.Check hero creation http response with &quot;Invalid name,Name cannot be blank&quot;(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase05.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the blank name will be rejected by the hero creation api", "Optional[Verify the blank name will be rejected by the hero creation api]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankNameErrorMessage(Testcases.java:170)
+	at ✽.Check hero creation http response with &quot;Invalid name,Name cannot be blank&quot;(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase05.feature:6)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2007599722", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2007599722'><pre>java.lang.AssertionError: The following asserts failed:
+	Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankNameErrorMessage(Testcases.java:170)
+	at ✽.Check hero creation http response with &quot;Invalid name,Name cannot be blank&quot;(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase05.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the name with 101 characters will be rejected by the hero creation api", "Optional[Verify the name with 101 characters will be rejected by the hero creation api]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid name] but found [null]
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidNameErrorMessage(Testcases.java:188)
+	at ✽.Check hero creation http response with Invalid name error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase06.feature:6)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1037163664", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1037163664'><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid name] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidNameErrorMessage(Testcases.java:188)
+	at ✽.Check hero creation http response with Invalid name error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase06.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the blank gender input will be rejected by the hero creation api", "Optional[Verify the gender input not in "MALE" or "FEMALE"]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Error Message is wrong. expected [Invalid gender,Gender cannot be blank] but found [Gender cannot be blank,Invalid gender]
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankGenderErrorMessage2(Testcases.java:232)
+	at ✽.Check hero creation http response with blank gender error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase08.feature:14)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1476235721", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1476235721'><pre>java.lang.AssertionError: The following asserts failed:
+	Error Message is wrong. expected [Invalid gender,Gender cannot be blank] but found [Gender cannot be blank,Invalid gender]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankGenderErrorMessage2(Testcases.java:232)
+	at ✽.Check hero creation http response with blank gender error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase08.feature:14)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the birthdate with time can be stored in the database and the hero can be created successfully", "Optional[Verify the birthdate with time can be stored in the database and the hero can be created successfully]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 200 expected [200] but found [400]
+	at stepdefs.Testcases.checkTheCorrectHeroDataHttpResponse(Testcases.java:49)
+	at ✽.Check the correct hero data http response(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase09.feature:6)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2123533871", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2123533871'><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 200 expected [200] but found [400]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkTheCorrectHeroDataHttpResponse(Testcases.java:49)
+	at ✽.Check the correct hero data http response(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase09.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the birthdate is a future date will be rejected by the hero creation api", "Optional[Verify the birthdate is a future date will be rejected by the hero creation api]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Error Message is wrong. expected [Invalid birthdate format] but found [There are some issues with working class hero]
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidBirthdateErrorMessage(Testcases.java:257)
+	at ✽.Check hero creation http response with invalid birthdate error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase11.feature:6)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace246003654", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace246003654'><pre>java.lang.AssertionError: The following asserts failed:
+	Error Message is wrong. expected [Invalid birthdate format] but found [There are some issues with working class hero]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidBirthdateErrorMessage(Testcases.java:257)
+	at ✽.Check hero creation http response with invalid birthdate error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase11.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the deathDate with time will be accepted by the hero creation api", "Optional[Verify the deathDate with time will be accepted by the hero creation api]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 200 expected [200] but found [400]
+	at stepdefs.Testcases.checkTheCorrectHeroDataHttpResponse(Testcases.java:49)
+	at ✽.Check the correct hero data http response(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase13.feature:6)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace348132918", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace348132918'><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 200 expected [200] but found [400]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkTheCorrectHeroDataHttpResponse(Testcases.java:49)
+	at ✽.Check the correct hero data http response(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase13.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the deathDate with a future date will be rejected by the hero creation api", "Optional[Verify the deathDate with a future date will be rejected by the hero creation api]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Error Message is wrong. expected [Invalid death date format] but found [There are some issues with working class hero]
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidDeathDateErrorMessage(Testcases.java:282)
+	at ✽.Check hero creation http response with invalid deathDate error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase14.feature:6)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace664091267", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace664091267'><pre>java.lang.AssertionError: The following asserts failed:
+	Error Message is wrong. expected [Invalid death date format] but found [There are some issues with working class hero]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidDeathDateErrorMessage(Testcases.java:282)
+	at ✽.Check hero creation http response with invalid deathDate error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase14.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the wrong format salary will be rejected by the hero creation api", "Optional[Verify the wrong format salary will be rejected by the hero creation api]"</td>
+<td><div><pre>java.lang.NullPointerException
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidFormatSalaryErrorMessage(Testcases.java:312)
+	at ✽.Check hero creation http response with invalid format salary error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase15.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1037955032", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1037955032'><pre>java.lang.NullPointerException
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidFormatSalaryErrorMessage(Testcases.java:312)
+	at ✽.Check hero creation http response with invalid format salary error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase15.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the salary with long decimal digits will be rejected by the hero creation api", "Optional[Verify the salary with long decimal digits will be rejected by the hero creation api]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid salary precision] but found [null]
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidSalaryErrorMessage(Testcases.java:368)
+	at ✽.Check hero creation http response with invalid salary error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase18.feature:6)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace597364637", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace597364637'><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid salary precision] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidSalaryErrorMessage(Testcases.java:368)
+	at ✽.Check hero creation http response with invalid salary error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase18.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the wrong format taxPaid will be rejected by the hero creation api", "Optional[Verify the wrong format taxPaid will be rejected by the hero creation api]"</td>
+<td><div><pre>java.lang.NullPointerException
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidFormatTaxPaidErrorMessage(Testcases.java:384)
+	at ✽.Check hero creation http response with invalid format taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase19.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1408533352", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1408533352'><pre>java.lang.NullPointerException
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidFormatTaxPaidErrorMessage(Testcases.java:384)
+	at ✽.Check hero creation http response with invalid format taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase19.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the blank taxPaid will be rejected by the hero creation api", "Optional[Verify the blank taxPaid will be rejected by the hero creation api]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankTaxPaidErrorMessage(Testcases.java:404)
+	at ✽.Check hero creation http response with blank taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase20.feature:6)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1416415959", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1416415959'><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankTaxPaidErrorMessage(Testcases.java:404)
+	at ✽.Check hero creation http response with blank taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase20.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the blank taxPaid will be rejected by the hero creation api", "Optional[Verify the blank taxPaid will be rejected by the hero creation api]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankTaxPaidErrorMessage(Testcases.java:404)
+	at ✽.Check hero creation http response with blank taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase20.feature:6)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1995952705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1995952705'><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankTaxPaidErrorMessage(Testcases.java:404)
+	at ✽.Check hero creation http response with blank taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase20.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the taxPaid with long decimal digits will be rejected by the hero creation api", "Optional[Verify the taxPaid with long decimal digits will be rejected by the hero creation api]"</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid taxPaid precision] but found [null]
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidTaxPaidErrorMessage(Testcases.java:440)
+	at ✽.Check hero creation http response with invalid taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase22.feature:6)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace865858182", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace865858182'><pre>java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid taxPaid precision] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidTaxPaidErrorMessage(Testcases.java:440)
+	at ✽.Check hero creation http response with invalid taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase22.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify wrong format browniePoints will be rejected by the hero creation api", "Optional[Verify wrong format browniePoints will be rejected by the hero creation api]"</td>
+<td><div><pre>java.lang.NullPointerException
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithWrongFormatBrowniePointsMessage(Testcases.java:463)
+	at ✽.Check hero creation http response with wrong format browniePoints message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase24.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1374217958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1374217958'><pre>java.lang.NullPointerException
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithWrongFormatBrowniePointsMessage(Testcases.java:463)
+	at ✽.Check hero creation http response with wrong format browniePoints message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase24.feature:6)
+</pre></div></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Send correct request can create a single workingclass", "Optional[Verify sending correct request can create a single workingclass hero successfully(nullable fields with values)]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Send correct request can create a single workingclass", "Optional[Verify sending correct request can create a single workingclass hero successfully(nullable fields with values)]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "natid's number is less than 0", "Optional[Verify the natid out of valid range will get creation error and won't create a new single workingclass hero]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify repeated natid won't create a new hero", "Optional[Verify repeated natid won't create a new hero]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the name with numbers will be rejected by the hero creation api", "Optional[Verify the name with numbers will be rejected by the hero creation api]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the gender input not in "MALE" or "FEMALE"", "Optional[Verify the gender input not in "MALE" or "FEMALE"]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the gender input not in "MALE" or "FEMALE"", "Optional[Verify the gender input not in "MALE" or "FEMALE"]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the blank gender input will be rejected by the hero creation api", "Optional[Verify the gender input not in "MALE" or "FEMALE"]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the birthdate with wrong format will be rejected by the hero creation api", "Optional[Verify the birthdate with wrong format will be rejected by the hero creation api]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the birthdate with wrong format will be rejected by the hero creation api", "Optional[Verify the birthdate with wrong format will be rejected by the hero creation api]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the birthdate with wrong format will be rejected by the hero creation api", "Optional[Verify the birthdate with wrong format will be rejected by the hero creation api]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the deathDate with wrong format will be rejected by the hero creation api", "Optional[Verify the deathDate with wrong format will be rejected by the hero creation api]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the deathDate with wrong format will be rejected by the hero creation api", "Optional[Verify the deathDate with wrong format will be rejected by the hero creation api]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the deathDate with wrong format will be rejected by the hero creation api", "Optional[Verify the deathDate with wrong format will be rejected by the hero creation api]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the blank salary will be rejected by the hero creation api", "Optional[Verify the blank salary will be rejected by the hero creation api]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the blank salary will be rejected by the hero creation api", "Optional[Verify the blank salary will be rejected by the hero creation api]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the salary is a negative number will be rejected by the hero creation api", "Optional[Verify the salary is a negative number will be rejected by the hero creation api]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the taxPaid is a negative number will be rejected by the hero creation api", "Optional[Verify the taxPaid is a negative number will be rejected by the hero creation api]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify blank browniePoints will be accepted by the hero creation api", "Optional[Verify blank browniePoints will be accepted by the hero creation api]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+<tr>
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify blank browniePoints will be accepted by the hero creation api", "Optional[Verify blank browniePoints will be accepted by the hero creation api]"</td>
+<td></td>
+<td>0</td>
+<td>TestRunner@6767c1fc</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="16" ignored="0" total="36" passed="20">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test" duration-ms="2261" started-at="2022-10-23T12:16:42 SGT" finished-at="2022-10-23T12:16:45 SGT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Regression" duration-ms="2261" started-at="2022-10-23T12:16:42 SGT" finished-at="2022-10-23T12:16:45 SGT">
+      <class name="TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@6767c1fc]" name="setUpClass" is-config="true" duration-ms="284" started-at="2022-10-23T12:16:42 SGT" finished-at="2022-10-23T12:16:43 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="403" started-at="2022-10-23T12:16:43 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:43 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Send correct request can create a single workingclass"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify sending correct request can create a single workingclass hero successfully(nullable fields with values)]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="20" started-at="2022-10-23T12:16:43 SGT" finished-at="2022-10-23T12:16:43 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="35" started-at="2022-10-23T12:16:43 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:43 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Send correct request can create a single workingclass"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify sending correct request can create a single workingclass hero successfully(nullable fields with values)]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="26" started-at="2022-10-23T12:16:43 SGT" finished-at="2022-10-23T12:16:43 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="29" started-at="2022-10-23T12:16:43 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:43 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["natid's number is less than 0"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the natid out of valid range will get creation error and won't create a new single workingclass hero]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="23" started-at="2022-10-23T12:16:43 SGT" finished-at="2022-10-23T12:16:43 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="48" started-at="2022-10-23T12:16:43 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:43 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["natid's number is greater than 9999999"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the natid out of valid range will get creation error and won't create a new single workingclass hero]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+response http code is not 400 expected [400] but found [200],
+Error Message is wrong. expected [Invalid natid] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+response http code is not 400 expected [400] but found [200],
+Error Message is wrong. expected [Invalid natid] but found [null]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepdefs.Testcases.checkHeroCreationHttpResponseWithErrorNatidMessage(Testcases.java:119)
+at ✽.Check hero creation http response with error natid message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase03.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="24" started-at="2022-10-23T12:16:43 SGT" finished-at="2022-10-23T12:16:43 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="74" started-at="2022-10-23T12:16:43 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:43 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify repeated natid won't create a new hero"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify repeated natid won't create a new hero]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="12" started-at="2022-10-23T12:16:43 SGT" finished-at="2022-10-23T12:16:43 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="32" started-at="2022-10-23T12:16:43 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:43 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the blank name will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the blank name will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankNameErrorMessage(Testcases.java:170)
+at ✽.Check hero creation http response with "Invalid name,Name cannot be blank"(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase05.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="27" started-at="2022-10-23T12:16:43 SGT" finished-at="2022-10-23T12:16:43 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="18" started-at="2022-10-23T12:16:43 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the blank name will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the blank name will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankNameErrorMessage(Testcases.java:170)
+at ✽.Check hero creation http response with "Invalid name,Name cannot be blank"(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase05.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="25" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="36" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the name with 101 characters will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the name with 101 characters will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+response http code is not 400 expected [400] but found [200],
+Error Message is wrong. expected [Invalid name] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+response http code is not 400 expected [400] but found [200],
+Error Message is wrong. expected [Invalid name] but found [null]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidNameErrorMessage(Testcases.java:188)
+at ✽.Check hero creation http response with Invalid name error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase06.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="27" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="20" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the name with numbers will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the name with numbers will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="25" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="19" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the gender input not in "MALE" or "FEMALE""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the gender input not in "MALE" or "FEMALE"]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="20" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="25" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the gender input not in "MALE" or "FEMALE""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the gender input not in "MALE" or "FEMALE"]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="22" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="26" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the blank gender input will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the gender input not in "MALE" or "FEMALE"]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Error Message is wrong. expected [Invalid gender,Gender cannot be blank] but found [Gender cannot be blank,Invalid gender]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Error Message is wrong. expected [Invalid gender,Gender cannot be blank] but found [Gender cannot be blank,Invalid gender]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankGenderErrorMessage2(Testcases.java:232)
+at ✽.Check hero creation http response with blank gender error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase08.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="16" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="21" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the blank gender input will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the gender input not in "MALE" or "FEMALE"]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="15" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="24" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the birthdate with time can be stored in the database and the hero can be created successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the birthdate with time can be stored in the database and the hero can be created successfully]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+response http code is not 200 expected [200] but found [400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+response http code is not 200 expected [200] but found [400]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepdefs.Testcases.checkTheCorrectHeroDataHttpResponse(Testcases.java:49)
+at ✽.Check the correct hero data http response(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase09.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="11" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="18" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the birthdate with wrong format will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the birthdate with wrong format will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="17" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="17" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the birthdate with wrong format will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the birthdate with wrong format will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="13" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="19" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the birthdate with wrong format will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the birthdate with wrong format will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="17" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="18" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the birthdate is a future date will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the birthdate is a future date will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Error Message is wrong. expected [Invalid birthdate format] but found [There are some issues with working class hero]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Error Message is wrong. expected [Invalid birthdate format] but found [There are some issues with working class hero]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidBirthdateErrorMessage(Testcases.java:257)
+at ✽.Check hero creation http response with invalid birthdate error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase11.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="21" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="17" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the deathDate with wrong format will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the deathDate with wrong format will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="11" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="13" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the deathDate with wrong format will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the deathDate with wrong format will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="13" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="20" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the deathDate with wrong format will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the deathDate with wrong format will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="15" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="20" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the deathDate with time will be accepted by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the deathDate with time will be accepted by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+response http code is not 200 expected [200] but found [400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+response http code is not 200 expected [200] but found [400]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepdefs.Testcases.checkTheCorrectHeroDataHttpResponse(Testcases.java:49)
+at ✽.Check the correct hero data http response(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase13.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="14" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="18" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the deathDate with a future date will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the deathDate with a future date will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Error Message is wrong. expected [Invalid death date format] but found [There are some issues with working class hero]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Error Message is wrong. expected [Invalid death date format] but found [There are some issues with working class hero]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidDeathDateErrorMessage(Testcases.java:282)
+at ✽.Check hero creation http response with invalid deathDate error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase14.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="15" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="17" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the wrong format salary will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the wrong format salary will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidFormatSalaryErrorMessage(Testcases.java:312)
+at ✽.Check hero creation http response with invalid format salary error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase15.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="12" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="14" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the blank salary will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the blank salary will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="11" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="13" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the blank salary will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the blank salary will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="12" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="14" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the salary is a negative number will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the salary is a negative number will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="11" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="23" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the salary with long decimal digits will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the salary with long decimal digits will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+response http code is not 400 expected [400] but found [200],
+Error Message is wrong. expected [Invalid salary precision] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+response http code is not 400 expected [400] but found [200],
+Error Message is wrong. expected [Invalid salary precision] but found [null]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidSalaryErrorMessage(Testcases.java:368)
+at ✽.Check hero creation http response with invalid salary error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase18.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="12" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="13" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the wrong format taxPaid will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the wrong format taxPaid will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidFormatTaxPaidErrorMessage(Testcases.java:384)
+at ✽.Check hero creation http response with invalid format taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase19.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="16" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="36" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the blank taxPaid will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the blank taxPaid will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+response http code is not 400 expected [400] but found [200],
+Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+response http code is not 400 expected [400] but found [200],
+Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankTaxPaidErrorMessage(Testcases.java:404)
+at ✽.Check hero creation http response with blank taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase20.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="15" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="31" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the blank taxPaid will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the blank taxPaid will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+response http code is not 400 expected [400] but found [200],
+Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+response http code is not 400 expected [400] but found [200],
+Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankTaxPaidErrorMessage(Testcases.java:404)
+at ✽.Check hero creation http response with blank taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase20.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="28" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="21" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:44 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the taxPaid is a negative number will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the taxPaid is a negative number will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="23" started-at="2022-10-23T12:16:44 SGT" finished-at="2022-10-23T12:16:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="31" started-at="2022-10-23T12:16:44 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:45 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the taxPaid with long decimal digits will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify the taxPaid with long decimal digits will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+response http code is not 400 expected [400] but found [200],
+Error Message is wrong. expected [Invalid taxPaid precision] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+response http code is not 400 expected [400] but found [200],
+Error Message is wrong. expected [Invalid taxPaid precision] but found [null]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidTaxPaidErrorMessage(Testcases.java:440)
+at ✽.Check hero creation http response with invalid taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase22.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="14" started-at="2022-10-23T12:16:45 SGT" finished-at="2022-10-23T12:16:45 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="36" started-at="2022-10-23T12:16:45 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:45 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify blank browniePoints will be accepted by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify blank browniePoints will be accepted by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="21" started-at="2022-10-23T12:16:45 SGT" finished-at="2022-10-23T12:16:45 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="33" started-at="2022-10-23T12:16:45 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:45 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify blank browniePoints will be accepted by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify blank browniePoints will be accepted by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="14" started-at="2022-10-23T12:16:45 SGT" finished-at="2022-10-23T12:16:45 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@6767c1fc]" name="runScenario" duration-ms="22" started-at="2022-10-23T12:16:45 SGT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-23T12:16:45 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify wrong format browniePoints will be rejected by the hero creation api"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Verify wrong format browniePoints will be rejected by the hero creation api]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at stepdefs.Testcases.checkHeroCreationHttpResponseWithWrongFormatBrowniePointsMessage(Testcases.java:463)
+at ✽.Check hero creation http response with wrong format browniePoints message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase24.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="cleanDirtyData()[pri:0, instance:TestRunner@6767c1fc]" name="cleanDirtyData" is-config="true" duration-ms="13" started-at="2022-10-23T12:16:45 SGT" finished-at="2022-10-23T12:16:45 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanDirtyData -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@6767c1fc]" name="tearDownClass" is-config="true" duration-ms="28" started-at="2022-10-23T12:16:45 SGT" finished-at="2022-10-23T12:16:45 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner -->
+    </test> <!-- Regression -->
+  </suite> <!-- All Test -->
+</testng-results>

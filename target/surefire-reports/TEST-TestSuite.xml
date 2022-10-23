@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="2.496" tests="36" errors="0" skipped="0" failures="16">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/nico/Desktop/github/oppenheimer-api-test/target/test-classes:/Users/nico/Desktop/github/oppenheimer-api-test/target/classes:/Users/nico/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/nico/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/nico/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nico/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/nico/.m2/repository/io/cucumber/cucumber-java/6.1.1/cucumber-java-6.1.1.jar:/Users/nico/.m2/repository/io/cucumber/cucumber-core/6.1.1/cucumber-core-6.1.1.jar:/Users/nico/.m2/repository/io/cucumber/cucumber-gherkin/6.1.1/cucumber-gherkin-6.1.1.jar:/Users/nico/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.1.1/cucumber-gherkin-messages-6.1.1.jar:/Users/nico/.m2/repository/io/cucumber/messages/12.1.1/messages-12.1.1.jar:/Users/nico/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/nico/.m2/repository/io/cucumber/cucumber-expressions/10.2.0/cucumber-expressions-10.2.0.jar:/Users/nico/.m2/repository/io/cucumber/datatable/3.3.1/datatable-3.3.1.jar:/Users/nico/.m2/repository/io/cucumber/cucumber-plugin/6.1.1/cucumber-plugin-6.1.1.jar:/Users/nico/.m2/repository/io/cucumber/docstring/6.1.1/docstring-6.1.1.jar:/Users/nico/.m2/repository/io/cucumber/html-formatter/6.0.3/html-formatter-6.0.3.jar:/Users/nico/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/nico/.m2/repository/io/cucumber/cucumber-testng/6.1.1/cucumber-testng-6.1.1.jar:/Users/nico/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar:/Users/nico/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/nico/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar:/Users/nico/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/nico/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/nico/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar:/Users/nico/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/nico/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/Users/nico/.m2/repository/org/mariadb/jdbc/mariadb-java-client/3.0.7/mariadb-java-client-3.0.7.jar:/Users/nico/.m2/repository/org/slf4j/slf4j-api/2.0.3/slf4j-api-2.0.3.jar:/Users/nico/.m2/repository/org/slf4j/slf4j-simple/2.0.3/slf4j-simple-2.0.3.jar:"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://www.azulsystems.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="user.country.format" value="SG"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/nico/Desktop/github/oppenheimer-api-test/target/surefire/surefirebooter402049493629777112.jar /Users/nico/Desktop/github/oppenheimer-api-test/target/surefire 2022-10-23T12-16-42_416-jvmRun1 surefire5937603513455504496tmp surefire_08142318888060111031tmp"/>
+    <property name="surefire.test.class.path" value="/Users/nico/Desktop/github/oppenheimer-api-test/target/test-classes:/Users/nico/Desktop/github/oppenheimer-api-test/target/classes:/Users/nico/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/nico/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/nico/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/nico/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/nico/.m2/repository/io/cucumber/cucumber-java/6.1.1/cucumber-java-6.1.1.jar:/Users/nico/.m2/repository/io/cucumber/cucumber-core/6.1.1/cucumber-core-6.1.1.jar:/Users/nico/.m2/repository/io/cucumber/cucumber-gherkin/6.1.1/cucumber-gherkin-6.1.1.jar:/Users/nico/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.1.1/cucumber-gherkin-messages-6.1.1.jar:/Users/nico/.m2/repository/io/cucumber/messages/12.1.1/messages-12.1.1.jar:/Users/nico/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/nico/.m2/repository/io/cucumber/cucumber-expressions/10.2.0/cucumber-expressions-10.2.0.jar:/Users/nico/.m2/repository/io/cucumber/datatable/3.3.1/datatable-3.3.1.jar:/Users/nico/.m2/repository/io/cucumber/cucumber-plugin/6.1.1/cucumber-plugin-6.1.1.jar:/Users/nico/.m2/repository/io/cucumber/docstring/6.1.1/docstring-6.1.1.jar:/Users/nico/.m2/repository/io/cucumber/html-formatter/6.0.3/html-formatter-6.0.3.jar:/Users/nico/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/nico/.m2/repository/io/cucumber/cucumber-testng/6.1.1/cucumber-testng-6.1.1.jar:/Users/nico/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar:/Users/nico/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/nico/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar:/Users/nico/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/nico/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/nico/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar:/Users/nico/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/nico/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/Users/nico/.m2/repository/org/mariadb/jdbc/mariadb-java-client/3.0.7/mariadb-java-client-3.0.7.jar:/Users/nico/.m2/repository/org/slf4j/slf4j-api/2.0.3/slf4j-api-2.0.3.jar:/Users/nico/.m2/repository/org/slf4j/slf4j-simple/2.0.3/slf4j-simple-2.0.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/nico"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/nico/Desktop/github/oppenheimer-api-test"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="jdk.vendor.version" value="Zulu 8.54.0.21-CA-macos-aarch64"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/nico/Desktop/github/oppenheimer-api-test/target/surefire/surefirebooter402049493629777112.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_292-b10"/>
+    <property name="user.name" value="nico"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.2.1"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/nico/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/"/>
+    <property name="java.io.tmpdir" value="/var/folders/nm/y41w6pk12ld068csbp4_pbj00000gn/T/"/>
+    <property name="java.version" value="1.8.0_292"/>
+    <property name="user.dir" value="/Users/nico/Desktop/github/oppenheimer-api-test"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/nico/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="25.292-b10"/>
+    <property name="java.ext.dirs" value="/Users/nico/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="runScenario" classname="TestRunner" time="0.407"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.035"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.028"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.055">
+    <failure message="The following asserts failed:&#10;	response http code is not 400 expected [400] but found [200],&#10;	Error Message is wrong. expected [Invalid natid] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid natid] but found [null]
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+@regression
+Scenario: natid's number is greater than 9999999                  # src/test/resources/features/testcase03.feature:9
+{"natid":"natid-10000000","name":"dirty data","gender":"FEMALE","birthDate":"1930-01-01","salary":"10000","taxPaid":"1000"}
+  Given A request with natid is greater than 9999999              # stepdefs.Testcases.aRequestWithNatidIsGreaterThan(int)
+  Then Check hero creation http response with error natid message # stepdefs.Testcases.checkHeroCreationHttpResponseWithErrorNatidMessage()
+      java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid natid] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithErrorNatidMessage(Testcases.java:119)
+	at ✽.Check hero creation http response with error natid message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase03.feature:11)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="TestRunner" time="0.075"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.032">
+    <failure message="The following asserts failed:&#10;	Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+@regression
+Scenario Outline: Verify the blank name will be rejected by the hero creation api # src/test/resources/features/testcase05.feature:9
+{"natid":"natid-139","name":"","gender":"FEMALE","birthDate":"1930-01-01","salary":"10000","taxPaid":"1000"}
+  Given A hero creation request with ""                                           # stepdefs.Testcases.aHeroCreationRequestWithBlankName(java.lang.String)
+  Then Check hero creation http response with "Invalid name,Name cannot be blank" # stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankNameErrorMessage(java.lang.String)
+      java.lang.AssertionError: The following asserts failed:
+	Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankNameErrorMessage(Testcases.java:170)
+	at ✽.Check hero creation http response with "Invalid name,Name cannot be blank"(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase05.feature:6)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="TestRunner" time="0.018">
+    <failure message="The following asserts failed:&#10;	Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+@regression
+Scenario Outline: Verify the blank name will be rejected by the hero creation api # src/test/resources/features/testcase05.feature:10
+{"natid":"natid-139","name":" ","gender":"FEMALE","birthDate":"1930-01-01","salary":"10000","taxPaid":"1000"}
+  Given A hero creation request with " "                                          # stepdefs.Testcases.aHeroCreationRequestWithBlankName(java.lang.String)
+  Then Check hero creation http response with "Invalid name,Name cannot be blank" # stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankNameErrorMessage(java.lang.String)
+      java.lang.AssertionError: The following asserts failed:
+	Error Message is wrong. expected [Invalid name,Name cannot be blank] but found [Name cannot be blank,Invalid name]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankNameErrorMessage(Testcases.java:170)
+	at ✽.Check hero creation http response with "Invalid name,Name cannot be blank"(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase05.feature:6)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="TestRunner" time="0.037">
+    <failure message="The following asserts failed:&#10;	response http code is not 400 expected [400] but found [200],&#10;	Error Message is wrong. expected [Invalid name] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid name] but found [null]
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+@regression
+Scenario: Verify the name with 101 characters will be rejected by the hero creation api                  # src/test/resources/features/testcase06.feature:4
+{"natid":"natid-139","name":"Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee","gender":"FEMALE","birthDate":"1930-01-01","salary":"10000","taxPaid":"1000"}
+  Given Send the name with 101 alphabets and spaces characters will be rejected by the hero creation api # stepdefs.Testcases.verifyTheNameWithAlphabetsAndSpacesCharactersWillBeRejectedByTheHeroCreationApi(int)
+  Then Check hero creation http response with Invalid name error message                                 # stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidNameErrorMessage()
+      java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid name] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidNameErrorMessage(Testcases.java:188)
+	at ✽.Check hero creation http response with Invalid name error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase06.feature:6)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="TestRunner" time="0.02"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.019"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.026"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.026">
+    <failure message="The following asserts failed:&#10;	Error Message is wrong. expected [Invalid gender,Gender cannot be blank] but found [Gender cannot be blank,Invalid gender]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	Error Message is wrong. expected [Invalid gender,Gender cannot be blank] but found [Gender cannot be blank,Invalid gender]
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+Scenario Outline: Verify the blank gender input will be rejected by the hero creation api      # src/test/resources/features/testcase08.feature:17
+{"natid":"natid-139","name":"xokpb mdtaq","gender":"","birthDate":"1930-01-01","salary":"10000","taxPaid":"1000"}
+  Given a hero creation request with blank gender "" will be rejected by the hero creation api # stepdefs.Testcases.aHeroCreationRequestWithBlankGenderWillBeRejectedByTheHeroCreationApi(java.lang.String)
+  Then Check hero creation http response with blank gender error message                       # stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankGenderErrorMessage2()
+      java.lang.AssertionError: The following asserts failed:
+	Error Message is wrong. expected [Invalid gender,Gender cannot be blank] but found [Gender cannot be blank,Invalid gender]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankGenderErrorMessage2(Testcases.java:232)
+	at ✽.Check hero creation http response with blank gender error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase08.feature:14)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="TestRunner" time="0.021"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.023">
+    <failure message="The following asserts failed:&#10;	response http code is not 200 expected [200] but found [400]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 200 expected [200] but found [400]
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+@regression
+Scenario: Verify the birthdate with time can be stored in the database and the hero can be created successfully # src/test/resources/features/testcase09.feature:4
+{"natid":"natid-139","name":"tuaxa eiunq","gender":"MALE","birthDate":"1980-01-01T09:00:00","salary":"10000","taxPaid":"1000"}
+  Given a hero creation request with a birthdate with time will be accepted by the hero creation api            # stepdefs.Testcases.aHeroCreationRequestWithABirthdateWithTimeWillBeAcceptedByTheHeroCreationApi()
+>>>>>>>> successful creation response is: {"errorMsg":"There are some issues with working class hero","timestamp":"2022-10-23T12:16:44.327735"}
+  Then Check the correct hero data http response                                                                # stepdefs.Testcases.checkTheCorrectHeroDataHttpResponse()
+      java.lang.AssertionError: The following asserts failed:
+	response http code is not 200 expected [200] but found [400]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkTheCorrectHeroDataHttpResponse(Testcases.java:49)
+	at ✽.Check the correct hero data http response(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase09.feature:6)
+
+  And Verify the new created correct hero from the working class heroes table record                            # stepdefs.Testcases.verifyTheNewCreatedCorrectHeroFromTheWorkingClassHeroesTableRecord()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="TestRunner" time="0.019"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.017"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.019"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.017">
+    <failure message="The following asserts failed:&#10;	Error Message is wrong. expected [Invalid birthdate format] but found [There are some issues with working class hero]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	Error Message is wrong. expected [Invalid birthdate format] but found [There are some issues with working class hero]
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+@regression
+Scenario: Verify the birthdate is a future date will be rejected by the hero creation api                       # src/test/resources/features/testcase11.feature:4
+{"natid":"natid-139","name":"vwbkv xsgcr","gender":"FEMALE","birthDate":"2050-01-01","salary":"10000","taxPaid":"1000"}
+  Given a hero creation request with birthdate which is a future date will be rejected by the hero creation api # stepdefs.Testcases.aHeroCreationRequestWithBirthdateWhichIsAFutureDateWillBeRejectedByTheHeroCreationApi()
+  Then Check hero creation http response with invalid birthdate error message                                   # stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidBirthdateErrorMessage()
+      java.lang.AssertionError: The following asserts failed:
+	Error Message is wrong. expected [Invalid birthdate format] but found [There are some issues with working class hero]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidBirthdateErrorMessage(Testcases.java:257)
+	at ✽.Check hero creation http response with invalid birthdate error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase11.feature:6)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="TestRunner" time="0.017"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.014"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.02"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.021">
+    <failure message="The following asserts failed:&#10;	response http code is not 200 expected [200] but found [400]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 200 expected [200] but found [400]
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+@regression
+Scenario: Verify the deathDate with time will be accepted by the hero creation api                     # src/test/resources/features/testcase13.feature:4
+{"natid":"natid-139","name":"asglv voujf","gender":"MALE","birthDate":"1930-01-01","deathDate":"2020-01-01T09:00:00","salary":"10000","taxPaid":"1000"}
+  Given a hero creation request with the deathDate with time will be accepted by the hero creation api # stepdefs.Testcases.aHeroCreationRequestWithTheDeathDateWithTimeWillBeAcceptedByTheHeroCreationApi()
+>>>>>>>> successful creation response is: {"errorMsg":"There are some issues with working class hero","timestamp":"2022-10-23T12:16:44.592258"}
+  Then Check the correct hero data http response                                                       # stepdefs.Testcases.checkTheCorrectHeroDataHttpResponse()
+      java.lang.AssertionError: The following asserts failed:
+	response http code is not 200 expected [200] but found [400]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkTheCorrectHeroDataHttpResponse(Testcases.java:49)
+	at ✽.Check the correct hero data http response(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase13.feature:6)
+
+  And Verify the new created correct hero from the working class heroes table record                   # stepdefs.Testcases.verifyTheNewCreatedCorrectHeroFromTheWorkingClassHeroesTableRecord()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="TestRunner" time="0.018">
+    <failure message="The following asserts failed:&#10;	Error Message is wrong. expected [Invalid death date format] but found [There are some issues with working class hero]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	Error Message is wrong. expected [Invalid death date format] but found [There are some issues with working class hero]
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+@regression
+Scenario: Verify the deathDate with a future date will be rejected by the hero creation api  # src/test/resources/features/testcase14.feature:4
+{"natid":"natid-139","name":"otkgh aebgn","gender":"MALE","birthDate":"1930-01-01","deathDate":"2050-01-01","salary":"10000","taxPaid":"1000"}
+  Given a hero creation request with a future date will be rejected by the hero creation api # stepdefs.Testcases.aHeroCreationRequestWithAFutureDateWillBeRejectedByTheHeroCreationApi()
+  Then Check hero creation http response with invalid deathDate error message                # stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidDeathDateErrorMessage()
+      java.lang.AssertionError: The following asserts failed:
+	Error Message is wrong. expected [Invalid death date format] but found [There are some issues with working class hero]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidDeathDateErrorMessage(Testcases.java:282)
+	at ✽.Check hero creation http response with invalid deathDate error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase14.feature:6)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="TestRunner" time="0.017">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+@regression
+Scenario: Verify the wrong format salary will be rejected by the hero creation api                     # src/test/resources/features/testcase15.feature:4
+{"natid":"natid-139","name":"gahml cvtuj","gender":"FEMALE","birthDate":"1930-01-01","salary":"asdfasdf","taxPaid":"1000"}
+  Given a hero creation request with the wrong format salary will be rejected by the hero creation api # stepdefs.Testcases.aHeroCreationRequestWithTheWrongFormatSalaryWillBeRejectedByTheHeroCreationApi()
+  Then Check hero creation http response with invalid format salary error message                      # stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidFormatSalaryErrorMessage()
+      java.lang.NullPointerException
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidFormatSalaryErrorMessage(Testcases.java:312)
+	at ✽.Check hero creation http response with invalid format salary error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase15.feature:6)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="TestRunner" time="0.014"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.014"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.015"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.023">
+    <failure message="The following asserts failed:&#10;	response http code is not 400 expected [400] but found [200],&#10;	Error Message is wrong. expected [Invalid salary precision] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid salary precision] but found [null]
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+@regression
+Scenario: Verify the salary with long decimal digits will be rejected by the hero creation api                 # src/test/resources/features/testcase18.feature:4
+{"natid":"natid-139","name":"wkzkr jpcmb","gender":"FEMALE","birthDate":"1930-01-01","salary":"100000.123","taxPaid":"1000"}
+  Given a hero creation request with with long decimal digits salary will be rejected by the hero creation api # stepdefs.Testcases.aHeroCreationRequestWithWithLongDecimalDigitsWillBeRejectedByTheHeroCreationApi()
+  Then Check hero creation http response with invalid salary error message                                     # stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidSalaryErrorMessage()
+      java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid salary precision] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidSalaryErrorMessage(Testcases.java:368)
+	at ✽.Check hero creation http response with invalid salary error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase18.feature:6)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="TestRunner" time="0.013">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+@regression
+Scenario: Verify the wrong format taxPaid will be rejected by the hero creation api                     # src/test/resources/features/testcase19.feature:4
+{"natid":"natid-140","name":"hexso wosif","gender":"FEMALE","birthDate":"1930-01-01","salary":"10000","taxPaid":"abdafasdf"}
+  Given a hero creation request with the wrong format taxPaid will be rejected by the hero creation api # stepdefs.Testcases.aHeroCreationRequestWithTheWrongFormatTaxPaidWillBeRejectedByTheHeroCreationApi()
+  Then Check hero creation http response with invalid format taxPaid error message                      # stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidFormatTaxPaidErrorMessage()
+      java.lang.NullPointerException
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidFormatTaxPaidErrorMessage(Testcases.java:384)
+	at ✽.Check hero creation http response with invalid format taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase19.feature:6)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="TestRunner" time="0.036">
+    <failure message="The following asserts failed:&#10;	response http code is not 400 expected [400] but found [200],&#10;	Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+@regression
+Scenario Outline: Verify the blank taxPaid will be rejected by the hero creation api                # src/test/resources/features/testcase20.feature:9
+{"natid":"natid-140","name":"avfby vpovu","gender":"FEMALE","birthDate":"1930-01-01","salary":"10000","taxPaid":""}
+  Given a hero creation request with the "" blank taxPaid will be rejected by the hero creation api # stepdefs.Testcases.aHeroCreationRequestWithTheBlankTaxPaidBlankTaxPaidWillBeRejectedByTheHeroCreationApi(java.lang.String)
+  Then Check hero creation http response with blank taxPaid error message                           # stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankTaxPaidErrorMessage()
+      java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankTaxPaidErrorMessage(Testcases.java:404)
+	at ✽.Check hero creation http response with blank taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase20.feature:6)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="TestRunner" time="0.032">
+    <failure message="The following asserts failed:&#10;	response http code is not 400 expected [400] but found [200],&#10;	Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+@regression
+Scenario Outline: Verify the blank taxPaid will be rejected by the hero creation api                 # src/test/resources/features/testcase20.feature:10
+{"natid":"natid-141","name":"gnbot uwgik","gender":"MALE","birthDate":"1930-01-01","salary":"10000","taxPaid":" "}
+  Given a hero creation request with the " " blank taxPaid will be rejected by the hero creation api # stepdefs.Testcases.aHeroCreationRequestWithTheBlankTaxPaidBlankTaxPaidWillBeRejectedByTheHeroCreationApi(java.lang.String)
+  Then Check hero creation http response with blank taxPaid error message                            # stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankTaxPaidErrorMessage()
+      java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [TaxPaid cannot be blank] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithBlankTaxPaidErrorMessage(Testcases.java:404)
+	at ✽.Check hero creation http response with blank taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase20.feature:6)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="TestRunner" time="0.023"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.031">
+    <failure message="The following asserts failed:&#10;	response http code is not 400 expected [400] but found [200],&#10;	Error Message is wrong. expected [Invalid taxPaid precision] but found [null]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid taxPaid precision] but found [null]
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+@regression
+Scenario: Verify the taxPaid with long decimal digits will be rejected by the hero creation api            # src/test/resources/features/testcase22.feature:4
+{"natid":"natid-142","name":"mikpr xjxsa","gender":"MALE","birthDate":"1930-01-01","salary":"1000.123","taxPaid":"1000"}
+  Given a hero creation request with long decimal digits taxPaid will be rejected by the hero creation api # stepdefs.Testcases.aHeroCreationRequestWithLongDecimalDigitsTaxPaidWillBeRejectedByTheHeroCreationApi()
+  Then Check hero creation http response with invalid taxPaid error message                                # stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidTaxPaidErrorMessage()
+      java.lang.AssertionError: The following asserts failed:
+	response http code is not 400 expected [400] but found [200],
+	Error Message is wrong. expected [Invalid taxPaid precision] but found [null]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithInvalidTaxPaidErrorMessage(Testcases.java:440)
+	at ✽.Check hero creation http response with invalid taxPaid error message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase22.feature:6)
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario" classname="TestRunner" time="0.036"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.032"/>
+  <testcase name="runScenario" classname="TestRunner" time="0.022">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+</failure>
+    <system-out><![CDATA[After Method Executed
+>>>>>> delete ops: delete from working_class_heroes where name = 'dirty data'
+>>>>>> delete ops: delete from working_class_heroes where name = 'Longggggggggggggggggggggggggggggggggggggggggggggggggggggggg Nameeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
+
+@regression
+Scenario: Verify wrong format browniePoints will be rejected by the hero creation api                     # src/test/resources/features/testcase24.feature:4
+{"natid":"natid-145","name":"ztvux sylbe","gender":"FEMALE","birthDate":"1930-01-01","browniePoints":"asdfasdfasdf","salary":"10000","taxPaid":"1000"}
+  Given a hero creation request with wrong format browniePoints will be rejected by the hero creation api # stepdefs.Testcases.aHeroCreationRequestWithWrongFormatBrowniePointsWillBeRejectedByTheHeroCreationApi()
+  Then Check hero creation http response with wrong format browniePoints message                          # stepdefs.Testcases.checkHeroCreationHttpResponseWithWrongFormatBrowniePointsMessage()
+      java.lang.NullPointerException
+	at stepdefs.Testcases.checkHeroCreationHttpResponseWithWrongFormatBrowniePointsMessage(Testcases.java:463)
+	at ✽.Check hero creation http response with wrong format browniePoints message(file:///Users/nico/Desktop/github/oppenheimer-api-test/src/test/resources/features/testcase24.feature:6)
+
+]]></system-out>
+  </testcase>
+</testsuite>
